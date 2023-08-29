@@ -19,3 +19,15 @@ icon.className= 'fa-solid fa-plus';
 }
     })
 }) 
+
+
+
+// swiper js
+var swiper = new Swiper(".mySwiper", {
+    slidesPerView: 3,
+    spaceBetween: 30,
+    pagination: {
+      el: ".swiper-pagination",
+      loop: true,
+    },
+  });
