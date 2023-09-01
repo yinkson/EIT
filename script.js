@@ -23,11 +23,37 @@ icon.className= 'fa-solid fa-plus';
 
 
 // swiper js
-var swiper = new Swiper(".mySwiper", {
-    slidesPerView: 3,
-    spaceBetween: 30,
-    pagination: {
-      el: ".swiper-pagination",
-      loop: true,
+// var swiper = new Swiper(".mySwiper", {
+//     slidesPerView: 3,
+//     spaceBetween: 30,
+//     pagination: {
+//       el: ".swiper-pagination",
+//       loop: true,
+//     },
+//   });
+
+var swiper = new Swiper(".review-cont", {
+    spaceBetween: 20,
+    centeredSlides: true,
+    autoplay: {
+      delay: 5500,
+      disableOnInteraction: false,
+    },
+
+    loop: true,
+
+
+    breakpoints: {
+      0: {
+          slidesPerView: 1,
+      },
+      640: {
+        slidesPerView: 2,
+      },
+      768: {
+        slidesPerView: 3,
+      },
+     
+     
     },
   });
